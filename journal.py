@@ -17,7 +17,7 @@ def newEntry(nomArchivo, fechaHoy):
     diasES = { "Mon":"Lunes","Tue":"Martes","Wed":"Miércoles","Thu":"Jueves","Fri":"Viernes","Sat":"Sábado", "Sun":"Domingo"}
     # diccionario para transformar los días de la semana a su equivalente en español
     dia = fechaHoy.strftime("%d")
-    mes = fechaHoy.strftime("%m")
+    mes = fechaHoy.strftime("%m") #oli tarea pro
     diaSemana = diasES[fechaHoy.strftime("%a")]				# obtiene el dia de la semana a partir del dia de hoy
     nomArchivo.write(f"[{dia}/{mes}({diaSemana})]: ")		# escribe la fecha a partir de los datos obtenidos previamente
     nomArchivo.write(input("¿Cómo te sientes hoy?: "))		# pide al usuario el contenido de la entrada y lo añade
